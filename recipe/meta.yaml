@@ -31,6 +31,7 @@ requirements:
     - r-blme
     - r-broom
     - r-dplyr
+    - r-foreach
     - r-ggplot2
     - r-lme4 >=1.1_11
     - r-mvtnorm
@@ -44,6 +45,7 @@ requirements:
     - r-blme
     - r-broom
     - r-dplyr
+    - r-foreach
     - r-ggplot2
     - r-lme4 >=1.1_11
     - r-mvtnorm
