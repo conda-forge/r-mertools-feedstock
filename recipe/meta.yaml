@@ -1,4 +1,4 @@
-{% set version = '0.5.0' %}
+{% set version = "0.5.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/merTools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/merTools/merTools_{{ version }}.tar.gz
-  sha256: 99110248bf135189db06d012f6f493c04f250527a3022a3a406dc353ac1d0ea7
+  sha256: 0044bd0968e8059434b2809de5fb5f6bd5f2cc365f8708b1c333e8e7865249cd
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -29,18 +29,20 @@ requirements:
     - r-arm
     - r-blme
     - r-broom
+    - r-broom.mixed
     - r-dplyr
     - r-foreach
     - r-ggplot2
     - r-lme4 >=1.1_11
     - r-mvtnorm
-    - r-shiny
+    - r-shiny    
   run:
     - r-base
     - r-abind
     - r-arm
     - r-blme
     - r-broom
+    - r-broom.mixed
     - r-dplyr
     - r-foreach
     - r-ggplot2
@@ -55,12 +57,11 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=merTools
-  license: GPL (>= 2)
-  summary: Provides methods for extracting results from mixed-effect model objects fit with the
-    'lme4' package. Allows construction of prediction intervals efficiently from large
-    scale linear and generalized linear mixed-effects models.
+  license: GPL-2.0-or-later
+  summary: Provides methods for extracting results from mixed-effect model objects fit with the 'lme4' package. Allows construction of prediction intervals efficiently from large scale linear and generalized linear mixed-effects models.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
