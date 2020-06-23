@@ -29,18 +29,20 @@ requirements:
     - r-arm
     - r-blme
     - r-broom
+    - r-broom.mixed
     - r-dplyr
     - r-foreach
     - r-ggplot2
     - r-lme4 >=1.1_11
     - r-mvtnorm
-    - r-shiny
+    - r-shiny    
   run:
     - r-base
     - r-abind
     - r-arm
     - r-blme
     - r-broom
+    - r-broom.mixed
     - r-dplyr
     - r-foreach
     - r-ggplot2
@@ -55,10 +57,11 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=merTools
-  license: GPL (>= 2)
+  license: GPL-2.0-or-later
   summary: Provides methods for extracting results from mixed-effect model objects fit with the 'lme4' package. Allows construction of prediction intervals efficiently from large scale linear and generalized linear mixed-effects models.
   license_family: GPL3
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
