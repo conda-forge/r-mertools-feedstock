@@ -1,11 +1,11 @@
-About r-mertools
-================
+About r-mertools-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mertools-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=merTools
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mertools-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provides methods for extracting results from mixed-effect model objects fit with the 'lme4' package. Allows construction of prediction intervals efficiently from large scale linear and generalized linear mixed-effects models.
 
