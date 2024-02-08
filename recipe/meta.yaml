@@ -1,4 +1,4 @@
-{% set version = "0.6.1" %}
+{% set version = "0.6.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/merTools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/merTools/merTools_{{ version }}.tar.gz
-  sha256: ad8e01e195160e568d405871855a3ec491fbb9b7203573281db87797ff23b926
+  sha256: 1007fb7661b41085e1eb6dea294f6a5da22acc6064fe154dce8050882775b173
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
