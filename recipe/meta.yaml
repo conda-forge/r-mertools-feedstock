@@ -1,4 +1,4 @@
-{% set version = "0.6.2" %}
+{% set version = "0.6.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/merTools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/merTools/merTools_{{ version }}.tar.gz
-  sha256: 1007fb7661b41085e1eb6dea294f6a5da22acc6064fe154dce8050882775b173
+  sha256: 859d9d9eb82f38b6665ca48911750404e1c54a5cb2cc1735aaddf1d54c0eb9d6
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
