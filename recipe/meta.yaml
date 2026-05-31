@@ -1,4 +1,4 @@
-{% set version = "0.6.4" %}
+{% set version = "1.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/merTools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/merTools/merTools_{{ version }}.tar.gz
-  sha256: 4c73280257de121d3d5fc722a3008f0d7581e2b8120c483073839a050d01525d
+  sha256: 14705e6547a8d06531523cbcb9f82ed9268fd2212581cef08bf75224070ad623
 
 build:
   number: 0
